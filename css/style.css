@@ -171,3 +171,75 @@ div[filter]:hover .text{
 	z-index: 3;
 	text-align: center;
 }
+/*Pricing*/
+.pricing{
+	color: black;
+	text-align: center;
+	padding-top: 165px;
+	padding-bottom: 125px;
+	background: #f0f1f1;
+	
+}
+
+.price{
+transition: 0.3s;
+background: #fff;
+}
+
+.price:hover{
+	box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39)
+}
+.price-head{
+	color: #fff;
+	padding-top: 40px;
+	padding-bottom: 65px;
+	background-image: url(../img/tarif.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-height: 211px;
+}
+.price-head p{
+	font-size: 25px;
+}
+.price-head{
+	font-size:  50px;
+}
+.price-head sub{
+	vertical-align: middle;
+	font-size:  17px;
+}
+.price-head sup{
+	vertical-align: middle;
+	font-size:  25px;
+}
+.price-body{
+	font-size: 17px;
+	color: #212121;
+	
+}
+.price-body ul li{
+	padding-top: 28px;
+	padding-bottom: 12px;
+	margin: 0 auto;
+	max-width: 175px;
+	border-bottom: 1px solid #bfbfbf;
+}
+.price-footer{
+padding: 60px 0;
+}
+.price-footer button{
+	cursor: pointer;
+	border: 2px solid #212121;
+	color: #212121;
+	background: transparent;
+	padding: 15px 30px;
+	font-size: 20px;
+	font-family: 'Open Sans Semibold';
+	transition: 0.3s;
+}
+.price-footer button:hover{
+	text-transform: uppercase;
+	color: #fff;
+	background: #00897b;
+	border: none;
+}
