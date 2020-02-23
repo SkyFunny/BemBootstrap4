@@ -6,9 +6,8 @@ ul, li{
 }
 
 body{
-	background: #878787;
+	font-family: 'Open Sans';
 }
-
 .menu-bar{
 	background: #fff;
 	padding: 20px 0;
@@ -28,4 +27,64 @@ body{
 .menu__item a:hover{
 	text-decoration: none;
 	color: #868686;
+}
+/*Шапка*/
+.header > div{
+	background-size: cover;
+	background-position: 0 100%;
+	background-image: url(../img/header.png);
+	padding: 180px 0;
+	text-align: center;
+	color: #fff;
+}
+.header__title{
+	font-size: 55px;
+
+}
+.header__text{
+	font-style: 20px;
+	margin-bottom: 100px;
+}
+.button{
+	padding: 10px 25px;
+	margin: 0 10px;
+	color: white;
+	transition: 0.3s;
+}
+.button_empty{
+	background: transparent;
+	border:  2px solid white;
+}
+.button_full{
+	background: #00897b;
+	border: 2px solid #00897b;
+}
+.button_empty:hover, .button_full:hover{
+	border: 2px dotted white;
+	background: #04574e;
+}
+/*About*/
+.about{
+	background: #fff;
+	color: black;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 125px;
+}
+.about__title{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 30px;
+
+}
+.about__text{
+	color:#212121;
+	font-size: 15px;
+	margin-bottom: 110px;
+}
+.about__h3{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: 'Open Sans Semibold';
+	font-size: 20px;
 }
