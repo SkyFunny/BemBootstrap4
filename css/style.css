@@ -232,7 +232,8 @@ padding: 60px 0;
 	border: 2px solid #212121;
 	color: #212121;
 	background: transparent;
-	padding: 15px 30px;
+	width: 189px;
+	height: 60px;
 	font-size: 20px;
 	font-family: 'Open Sans Semibold';
 	transition: 0.3s;
@@ -242,4 +243,123 @@ padding: 60px 0;
 	color: #fff;
 	background: #00897b;
 	border: none;
+}
+/*Team*/
+.team{
+	color: black;
+	text-align: center;
+	padding-top: 165px;
+	padding-bottom: 125px;
+	background: #fff;
+}
+.team h4{
+	margin-top: 30px;
+	font-size: 20px;
+	font-family: 'Open Sans Semibold';
+}
+.team p{
+	font-size: 15px;
+	margin-bottom: 30px;
+}
+.icons{
+	display: flex;
+	justify-content: center;
+}
+.icons a i{
+	transition: 0.3s;
+}
+.icons i:nth-child(1){
+	color: #f0f1f1;
+}
+.icons i:nth-child(2){
+	color: #00897b;
+}
+.icons a:hover i:nth-child(1){
+	color: #3949ab;
+}
+.icons a:hover i:nth-child(2){
+	color: #fff;
+}
+.team img{
+	margin: 0 auto;
+	max-width: 340px;
+}
+.multiple-items{
+	margin-top: 125px;	
+}
+.dots-style{
+	margin-top: 115px;
+	display: flex;
+	justify-content: center;
+}
+.dots-style button{
+	background: #00897b;
+	border: none;
+	border-radius: 50%;
+	font-size: 0;
+	height: 15px;
+	width: 15px;
+	margin: 5px;
+}
+.dots-style li[class="slick-active"] button{
+	background: #3949ab;
+}
+/*Blog*/
+.left > div:first-child{
+	order:1;
+}
+.left > div:last-child{
+	order: 2
+}
+.right > div:first-child{
+	order:2;
+}
+.right > div:last-child{
+	order: 1
+}
+.left, .right{
+	margin: 0 -40px;
+}
+.blog1{
+	text-align: left;
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+.blog1 a{
+	font-size: 25px;
+	color: #212121;
+	font-family: 'Open Sans Semibold';
+}
+.blog1 a:hover{
+	color: #00897b;
+	text-decoration: none;
+	cursor: pointer;
+}
+.blog1 div{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.blog1 span{
+	font-size: 17px;
+	font-family: 'Open Sans Semibold';
+	margin-right: 35px;
+}
+.blog1 i{
+	margin-right: 15px;
+}
+.blog1 p{
+	font-size: 15px;
+}
+.button_blog{
+	width: 220px;
+	height: 70px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 125px;
+	border: none;
+	background: #00897b;
+	font-family: 'Roboto';
+	font-weight: bold;
 }
