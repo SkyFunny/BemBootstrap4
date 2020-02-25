@@ -18,21 +18,23 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div id="toTop"><i class="fas fa-chevron-up"></i></div>
 	<header class="menu-bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-2">
+				<div class="col-xl-2 logo-bar">
 					<img src="img/logo.png" alt="Logo" class="logo">
+					<button class="menu-icon"><i class="fas fa-bars"></i></button>
 				</div>
 				<div class="col-xl-8 ml-auto align-self-center">
 					<nav>
 						<ul class="menu d-flex justify-content-end">
-							<li class="menu__item"><a href="#">Home</a></li>
-							<li class="menu__item"><a href="#">About</a></li>
-							<li class="menu__item"><a href="#">Servicing</a></li>
-							<li class="menu__item"><a href="#">Portfolio</a></li>
-							<li class="menu__item"><a href="#">Blog</a></li>
-							<li class="menu__item"><a href="#">Contact</a></li>
+							<li class="menu__item"><a href="#"><i class="fas fa-home"></i></a></li>
+							<li class="menu__item"><a href="#about">About</a></li>
+							<li class="menu__item"><a href="#services">Servicing</a></li>
+							<li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+							<li class="menu__item"><a href="#blog">Blog</a></li>
+							<li class="menu__item"><a href="#contact">Contact</a></li>
 							<li class="menu__item"><i class="fas fa-search"></i></li>
 						</ul>
 					</nav>
@@ -53,7 +55,7 @@
 		</div>
 	</header>
 
-	<section class="about">
+	<section class="about" id='about'>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
@@ -62,17 +64,17 @@
 				</div>
 			</div>
 			<div class="row justify-content-around">
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-md-6">
 					<img src="img/internet.png" alt="">
 					<h3 class="about__h3">Awesome Icons</h3>
 					<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
 				</div>
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-md-6">
 					<img src="img/transfer.png" alt="">
 					<h3 class="about__h3">One Page</h3>
 					<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
 				</div>
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-md-6">
 					<img src="img/head.png" alt="">
 					<h3 class="about__h3">Fully Responsive</h3>
 					<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
@@ -80,7 +82,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id='services'>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
@@ -89,7 +91,7 @@
 				</div>					
 			</div>
 			<div class="row justify-content-center">
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="our_card">
 						<i class="fas fa-search icon"></i>
 						<h3 class="about__h3">Research</h3>
@@ -97,7 +99,7 @@
 						<button class="button_services">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="our_card">
 						<i class="far fa-images icon"></i>
 						<h3 class="about__h3">Portfolio</h3>
@@ -105,7 +107,7 @@
 						<button class="button_services">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="our_card">
 						<i class="fas fa-question icon"></i>>
 						<h3 class="about__h3">Support</h3>
@@ -114,7 +116,7 @@
 					</div>
 				</div>
 				
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="our_card">
 						<i class="fas fa-book icon"></i>
 						<h3 class="about__h3">Documentation</h3>
@@ -122,7 +124,7 @@
 						<button class="button_services">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="our_card">
 						<i class="fas fa-code icon"></i>
 						<h3 class="about__h3">Development</h3>
@@ -130,7 +132,7 @@
 						<button class="button_services">Read more</button>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="our_card">
 						<i class="fas fa-pencil-alt icon"></i>
 						<h3 class="about__h3">Design</h3>
@@ -141,7 +143,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="portfolio">
+	<section class="portfolio" id='portfolio'>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
@@ -154,37 +156,37 @@
 				</div>					
 			</div>
 			<div class="row filter">
-				<div filter="wd" class="col-xl-4"><img src="img/item1.png" alt="">
+				<div filter="wd" class="col-xl-4 col-md-6"><img src="img/item1.png" alt="">
 					<div class="text">
 						<h5>Hand Watch</h5>
 						<p>Web design</p>						
 					</div>												
 				</div>						
-				<div filter="ud" class="col-xl-4"><img src="img/item2.png" alt="">
+				<div filter="ud" class="col-xl-4 col-md-6"><img src="img/item2.png" alt="">
 					<div class="text">
 						<h5>One Day Pass</h5>
 						<p>Uv/Ux design</p>						
 					</div>
 				</div>
-				<div filter="moc" class="col-xl-4"><img src="img/item3.png" alt="">
+				<div filter="moc" class="col-xl-4 col-md-6"><img src="img/item3.png" alt="">
 					<div class="text">
 						<h5>Modal T-shit</h5>
 						<p>Mockups</p>						
 					</div>
 				</div>
-				<div filter="wd" class="col-xl-4"><img src="img/item4.png" alt="">
+				<div filter="wd" class="col-xl-4 col-md-6"><img src="img/item4.png" alt="">
 					<div class="text">
 						<h5>Flask</h5>
 						<p>Web desin</p>						
 					</div>
 				</div>
-				<div filter="ud" class="col-xl-4"><img src="img/item5.png" alt="">
+				<div filter="ud" class="col-xl-4 col-md-6"><img src="img/item5.png" alt="">
 					<div class="text">
 						<h5>Eplemost</h5>
 						<p>Uv/Ux design</p>						
 					</div>
 				</div>
-				<div filter="moc" class="col-xl-4"><img src="img/item6.png" alt="">
+				<div filter="moc" class="col-xl-4 col-md-6"><img src="img/item6.png" alt="">
 					<div class="text">
 						<h5>The kitchens</h5>
 						<p>Mockups</p>						
@@ -205,7 +207,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-around">
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="price">
 						<div class="price-head"><p>Free Trail</p>
 							<sup>$</sup> 00 <sub>per  month</sub>
@@ -223,7 +225,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="price">
 						<div class="price-head"><p>Basic</p>
 							<sup>$</sup> 50 <sub>per  month</sub>
@@ -241,7 +243,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-md-6">
 					<div class="price">
 						<div class="price-head"><p>Ultimates</p>
 							<sup>$</sup> 99 <sub>per  month</sub>
@@ -430,7 +432,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id='blog'>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
@@ -440,7 +442,7 @@
 			</div>
 			<div class="row left">
 				<div class="col-xl-6">
-					<img src="img/blog1.png" alt="">
+					<img src="img/blog1.png" alt="" class="img-fluid">
 				</div>
 				<div class="col-xl-6">
 					<div class="blog1">
@@ -455,7 +457,7 @@
 			</div>
 			<div class="row right">
 				<div class="col-xl-6">
-					<img src="img/blog2.png" alt="">
+					<img src="img/blog2.png" alt="" class="img-fluid">
 				</div>
 				<div class="col-xl-6">
 					<div class="blog1">
@@ -470,7 +472,7 @@
 			</div>
 			<div class="row left">
 				<div class="col-xl-6">
-					<img src="img/blog3.png" alt="">
+					<img src="img/blog3.png" alt="" class="img-fluid">
 				</div>
 				<div class="col-xl-6">
 					<div class="blog1">
@@ -490,7 +492,7 @@
 			</div>
 		</div>
 	</section>
-	<footer class="footer">
+	<footer class="footer" id='contact'>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-8">
